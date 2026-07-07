@@ -1,4 +1,4 @@
-/* Fond Subaru Fire FULLSCREEN (méthode brute qui marche toujours) */
+/* Fond Subaru Fire FULLSCREEN (méthode brute) */
 #app-mount::before {
   content: "";
   position: fixed;
@@ -11,7 +11,7 @@
   pointer-events: none;
 }
 
-/* Rend TOUT Discord transparent */
+/* Rend TOUT Discord transparent (sauf exceptions) */
 * {
   background: transparent !important;
   background-color: transparent !important;
@@ -25,4 +25,58 @@
   background: rgba(255, 0, 0, 0.40);
   mix-blend-mode: multiply;
   z-index: -1;
+}
+
+/* Bordures rouges globales */
+* {
+  border-color: #ff1a1a !important;
+}
+
+/* Bordures rouges pour les éléments Discord */
+.sidebar-1tnWFu,
+.chatContent-3KubbW,
+.container-2RRFHK,
+.membersWrap-3NUR2t,
+.scroller-3X7KbA,
+.content-1SgpWY,
+.guilds__2b93a,
+.wrapper__216eb,
+.panels-3wFtMD,
+.form-3gdLxP,
+.channelTextArea-1FufC0 {
+  border-color: #ff1a1a !important;
+}
+
+/* Rendre les photos de profil visibles PARTOUT */
+.avatar-1BDn8e,
+.avatar-3QF_VA,
+.avatar-2e8l3a,
+.avatarWrapper-3B0ndJ,
+.avatar-2Vndt_,
+.avatar-1EWyVD,
+.avatar-3W3CeO,
+.avatar-2e8l3a,
+.member-2gU6Ar img,
+.member-2gU6Ar .avatar-3W3CeO,
+.listItem-3SmSlK .avatar-3W3CeO {
+  background: none !important;
+  background-color: none !important;
+  opacity: 1 !important;
+}
+
+/* PROFIL NON TRANSPARENT — fond normal Discord */
+.userProfileModalInner-3fh3QA,
+.userProfileModal-2j1gG,
+.root-8LYsGj,
+.overlay-1Zjf5p,
+.profilePanel-2PfvA,
+.userPanelInner-3KPWlH {
+  background: var(--background-primary) !important;
+  background-color: var(--background-primary) !important;
+}
+
+/* Bordures rouges dans le profil */
+.userProfileModalInner-3fh3QA *,
+.userPanelInner-3KPWlH * {
+  border-color: #ff1a1a !important;
 }
