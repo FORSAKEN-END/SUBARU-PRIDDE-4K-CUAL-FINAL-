@@ -1,4 +1,4 @@
-/* Fond Subaru Fire FULLSCREEN (version Akame Overkill) */
+/* Fond Subaru Fire FULLSCREEN (version Akame Overkill améliorée) */
 #app-mount,
 #app-mount::before,
 .appMount-2yBXZl,
@@ -16,7 +16,11 @@
 .container-2RRFHK,
 .membersWrap-3NUR2t,
 .scroller-3X7KbA,
-.sidebarRegionScroller__1f2d0 {
+.sidebarRegionScroller__1f2d0,
+.chatContainer__234ce,
+.chatWrapper__216eb,
+.contentRegion__0f7ab,
+.mainContent__2333f {
     background: transparent !important;
     background-image: url("https://i.imgur.com/q7evtad.png") !important;
     background-size: cover !important;
@@ -48,7 +52,11 @@ html, body {
 .membersWrap-3NUR2t,
 .scroller-3X7KbA,
 .content-1SgpWY,
-.sidebarRegionScroller__1f2d0 {
+.sidebarRegionScroller__1f2d0,
+.chatContainer__234ce,
+.chatWrapper__216eb,
+.contentRegion__0f7ab,
+.mainContent__2333f {
     backdrop-filter: none !important;
     background: transparent !important;
 }
