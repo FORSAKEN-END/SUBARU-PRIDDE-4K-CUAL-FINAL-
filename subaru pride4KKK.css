@@ -1,70 +1,28 @@
-/* Fond Subaru Fire FULLSCREEN (version Akame Overkill améliorée) */
-#app-mount,
-#app-mount::before,
-.appMount-2yBXZl,
-.app__160d8,
-.layers__1c917,
-.bg__7b3e0,
-.container__037ed,
-.baseLayer__8fda3,
-.layer__2efaa,
-.wrapper__216eb,
-.guilds__2b93a,
-.sidebar-1tnWFu,
-.chatContent-3KubbW,
-.content-1SgpWY,
-.container-2RRFHK,
-.membersWrap-3NUR2t,
-.scroller-3X7KbA,
-.sidebarRegionScroller__1f2d0,
-.chatContainer__234ce,
-.chatWrapper__216eb,
-.contentRegion__0f7ab,
-.mainContent__2333f {
-    background: transparent !important;
-    background-image: url("https://i.imgur.com/q7evtad.png") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+/* Fond Subaru Fire FULLSCREEN (méthode brute qui marche toujours) */
+#app-mount::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://i.imgur.com/q7evtad.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none;
 }
 
-/* Discord transparent */
-html, body {
-    background: transparent !important;
+/* Rend TOUT Discord transparent */
+* {
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 /* Overlay rouge feu */
 #app-mount::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(255, 0, 0, 0.40);
-    mix-blend-mode: multiply;
-    z-index: -1;
-}
-
-/* Désactivation des filtres Discord */
-.theme-dark,
-.theme-light,
-.container-2RRFHK,
-.chatContent-3KubbW,
-.sidebar-1tnWFu,
-.membersWrap-3NUR2t,
-.scroller-3X7KbA,
-.content-1SgpWY,
-.sidebarRegionScroller__1f2d0,
-.chatContainer__234ce,
-.chatWrapper__216eb,
-.contentRegion__0f7ab,
-.mainContent__2333f {
-    backdrop-filter: none !important;
-    background: transparent !important;
-}
-
-/* Glow rouge */
-.markup-eYLPri,
-.username-3JL4Kh,
-.title-338goq,
-.name-3Uvkvr {
-    text-shadow: 0 0 6px rgba(255, 40, 40, 0.7);
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 0, 0, 0.40);
+  mix-blend-mode: multiply;
+  z-index: -1;
 }
