@@ -7,7 +7,15 @@
 .container__037ed,
 .baseLayer__8fda3,
 .layer__2efaa,
-.wrapper__216eb {
+.wrapper__216eb,
+.guilds__2b93a,
+.sidebar-1tnWFu,
+.chatContent-3KubbW,
+.content-1SgpWY,
+.container-2RRFHK,
+.membersWrap-3NUR2t,
+.scroller-3X7KbA,
+.sidebarRegionScroller__1f2d0 {
   background: transparent !important;
   background-image: url("https://i.imgur.com/q7evtad.png") !important;
   background-size: cover !important;
@@ -30,7 +38,7 @@ html, body {
   z-index: -1;
 }
 
-/* Panneaux transparents — blindé */
+/* Panneaux transparents — ultra blindé */
 .theme-dark, .theme-light,
 .container-2RRFHK,
 .chatContent-3KubbW,
